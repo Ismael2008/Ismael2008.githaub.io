@@ -11,6 +11,8 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+
+
 // Mostrar/Ocultar lista de Servicios
 const toggleServices = document.getElementById('toggle-services');
 const servicesList = document.getElementById('services-list');
@@ -22,6 +24,15 @@ toggleServices.addEventListener('click', () => {
     } else {
         servicesList.style.display = 'none';
         toggleServices.textContent = 'Mostrar Servicios';
+    }
+});
+
+document.getElementById("menu-button").addEventListener("click", function() {
+    var dropdown = document.getElementById("dropdown-menu");
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block"; // Muestra el menú
+    } else {
+        dropdown.style.display = "none"; // Oculta el menú
     }
 });
 
